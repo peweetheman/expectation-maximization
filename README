@@ -1,0 +1,13 @@
+Patrick Phillips
+CSC 246
+EM for HMM Gaussian HW 9
+
+I did the Guassian version of EM for HMM and passed both versions of the smoke test, I implemented it to work with/without args.tied.
+I experimented with graphing with dev and training data, i commented out this portion of the code.
+I had some trouble vectorizing portions of my code, so I was not able to experiment with as many/large variations of clusters and iterations due to runtimes.
+I found that overall the HMM worked better on the points data set than the previous mixture of gaussians homework without the time step model.
+I was able to get around -4.0 LL with this model and nothing better than -4.3 or so with the previous model, even though on this one I didn't do as many clusters and/or iterations.
+I attatched several of these graphs all labeled with what was tested. I found that increasing clusters and iterations both helped generally.
+Increasing iterations generally provided steady improvement with larger number of clusters, although I wasn't able to do too large values again.
+Increasing clusters did seem to plateau around 4 clusters, where the log-likelihood more or less stopped improving with a higher cluster num.
+There did not really seem to be any problems with overfitting based on the performance on dev data, however at these low cluster and iteration numbers, its hard to know what the overfitting would look like with larger hyperparameters.
